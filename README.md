@@ -1,3 +1,8 @@
+# This repo is being used as a spike project to investigate chart.js with react for another project.
+
+
+# Original Readme below:
+
 # Famous People List
 
 Start with the code provided here. 
