@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const peopleRouter = require('./routes/people.router.js');
 const PORT = process.env.PORT || 5000;
+require('dotenv').config();
 
 /** ---------- MIDDLEWARE ---------- **/
 app.use(bodyParser.json());
