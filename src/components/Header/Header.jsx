@@ -4,7 +4,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="Header-main">
-      <h1>Famous People</h1>
+      <h1>Chart.js Test</h1>
     </header>
   )
 }

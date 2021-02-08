@@ -1,18 +1,20 @@
 // Node Module that will connect to postgesql
 const pg = require('pg');
 
-// Setup PG to connect to the database
-const Pool = pg.Pool;
+let config = {}
 
-const pool = new Pool({
-    database: 'famous_people', // database name 
+config = {
+    user: 'postgres',
+    password: 'p3LmANHQ$p',
+    database: 'spike_chartjs_test_data', // database name 
     host: 'localhost', // where to find the database
     port: 5432,        // port for finding the database
     max: 10,           // max number of connections for the pool
     idleTimeoutMillis: 30000, // 30 seconds before timeout/cancel query
-    user: process.env.PG_USER,
-    password: process.env.PG_SECRET
-});
+};
+
+// Setup PG to connect to the database
+const pool = new pg.Pool(config);
 
 // Listener setup on the pool isn't required, 
 // but can be super handy for troubleshooting.
